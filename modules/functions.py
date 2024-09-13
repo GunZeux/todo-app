@@ -1,4 +1,4 @@
-def get_todo(filepath="todos.txt"):
+def get_todo(filepath="../todos.txt"):
     """
     Read the text file and return
     the To Do list
@@ -25,3 +25,8 @@ def complete_todos(todos_arg, filepath="Completed.txt"):
     with open(filepath, "a") as file:
         file.write(todos_arg)
         file.close()
+
+
+if __name__ == "__main__":
+    print("From FUnction Module")
+    print(get_todo())
